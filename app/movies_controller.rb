@@ -55,13 +55,8 @@ def can_find_by_multiple_attributes
   # title == "Title"
   # release_date == 2000
   # director == "Me"
-  Movie.all.each do |i|
-  #  i.title ="Title"
-  #  i.release_date = 2000
-  #  i.director="Me"
-    NewsMailer.weekly(i).deliver_now
 
-  end
+  Movie.find_or_create_by(title:'Title')
 end
 
 def can_find_using_where_clause_and_be_sorted
