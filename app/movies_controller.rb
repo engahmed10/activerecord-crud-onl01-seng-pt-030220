@@ -88,9 +88,9 @@ def can_update_multiple_items_at_once
 end
 
 def can_destroy_a_single_item
-  aa=Movie.create(title: "That One Where the Guy Kicks Another Guy Once")
-  aa.destroy
-binding.pry
+  movie=Movie.create(title: "That One Where the Guy Kicks Another Guy Once")
+  movie.destroy
+  binding.pry
 end
 
 def can_destroy_all_items_at_once
