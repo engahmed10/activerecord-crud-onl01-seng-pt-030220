@@ -90,6 +90,7 @@ end
 def can_destroy_a_single_item
   movie=Movie.create(title: "That One Where the Guy Kicks Another Guy Once")
 #  movie.destroy
+binding.pry
 
 end
 
