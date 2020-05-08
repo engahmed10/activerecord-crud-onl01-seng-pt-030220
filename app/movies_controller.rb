@@ -57,7 +57,9 @@ def can_find_by_multiple_attributes
   # director == "Me"
 
   Movie.all.each do |i|
-    binding.pry
+    i.title
+    i.release_date
+    i.director
   end
 end
 
