@@ -55,7 +55,6 @@ def can_find_by_multiple_attributes
   # title == "Title"
   # release_date == 2000
   # director == "Me"
-
   Movie.all.each do |i|
     i.title ="Title"
     i.release_date = 2000
